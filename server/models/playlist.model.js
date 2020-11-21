@@ -17,7 +17,11 @@ const playlistSchema = new mongoose.Schema(
           ref: "Song",
         },
       ],
-    }
+    },
+    createdBy: {
+      type: ObjectId,
+      ref: "User",
+    },
   },
   {
     timestamps: true,

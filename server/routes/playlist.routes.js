@@ -13,6 +13,12 @@ module.exports = function (app) {
     });
 
     // app.get("/api/songs", [authJwt.verifyToken], controller.allSongs);
-    app.get("/api/playlists", controller.getAllPlaylists);
+    app.get("/api/playlists", [authJwt.verifyToken], controller.getAllPlaylists);
+
+    app.post("/api/playlists", [authJwt.verifyToken], controller.AddPlaylist);
+
+    app.get("/api/playlists/:user", [authJwt.verifyToken], controller.getPlaylistsForUser);
+
+    app.get("/api/playlists/id/:id", [authJwt.verifyToken], controller.getPlaylistsById);
 
 };

@@ -15,6 +15,8 @@ module.exports = function (app) {
     // app.get("/api/songs", [authJwt.verifyToken], controller.allSongs);
     app.get("/api/songs", controller.getAllSongs);
 
-    app.post("/api/songs",controller.AddSong)
+    app.post("/api/songs", [authJwt.verifyToken],controller.AddSong)
+
+    app.get("/api/songs/:song", [authJwt.verifyToken], controller.getSongsById);
 
 };

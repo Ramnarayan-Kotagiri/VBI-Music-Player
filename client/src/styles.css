@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* @import '~@angular/material/theming'; */
+
+/* @include mat-core(); */
+
+/* $MusicApp-primary: mat-palette($mat-indigo);
+$MusicApp-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$MusicApp-warn: mat-palette($mat-red);
+
+$MusicApp-theme: mat-light-theme((
+  color: (
+    primary: $MusicApp-primary,
+    accent: $MusicApp-accent,
+    warn: $MusicApp-warn,
+  )
+)); */
+
+/* @include angular-material-theme($MusicApp-theme); */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
