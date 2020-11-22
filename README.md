@@ -18,7 +18,7 @@ npm start
  [VBI Music Player](https://shielded-hollows-40674.herokuapp.com)
 
 ### API Endpoints
-| routes               | method | functionality        | sample param                                                                                                            |
+| routes               | method | function             | param/body                                                                                                              |
 | -------------------- | ------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | api/auth/signup      | post   | Sign up api          | {"username":"ramnarayan","email":"rnrkotagiri@gmail.com","password":"password","roles":["5fb9f5517256d42d5caa6d6d"]   } |
 | api/auth/signin      | post   | Sign in api          | {"username":"ramnarayan","password":"password"}                                                                         |
